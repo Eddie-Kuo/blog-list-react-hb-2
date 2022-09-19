@@ -11,6 +11,6 @@ export function useBlogs() {
     }
     fetchData();
   }, []);
-}
 
-// with the data fetched, we can then move to main.js where we can call the whole function set in hooks to display the values of each item
+  return { blogs } ;
+}
